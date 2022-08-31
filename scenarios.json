@@ -1,0 +1,66 @@
+[
+  {
+    "name": "baseline us-like",
+    "services": [
+      {
+        "service": "server",
+        "version": "",
+        "min": 12,
+        "max": 12
+      },
+      {
+        "service": "belgrano",
+        "purpose": "a0",
+        "min": 3,
+        "max": 3
+      },
+      {
+        "service": "api2",
+        "purpose": "main",
+        "min": 5,
+        "max": 5
+      },
+      {
+        "service": "api2",
+        "purpose": "users",
+        "min": 5,
+        "max": 5
+      },
+      {
+        "service": "users",
+        "version": "",
+        "min": 10,
+        "max": 10
+      },
+      {
+        "service": "baas3",
+        "purpose": "a0",
+        "min": 20,
+        "max": 20
+      }
+    ],
+    "flags": [
+      {
+        "flag": "flag_test",
+        "value": false,
+        "rollback": true
+      }
+    ],
+    "config": [
+      {
+        "key": "test",
+        "service": "test",
+        "value": "myConfig",
+        "rollback": "myPreviousConfig"
+      }
+    ],
+    "tests": [
+      {
+        "dotEnv": "scenarios/authentication/authorization-code/new-experience/config/tus2/baseline/env-tus2",
+        "scenarioPath": "scenarios/authentication/authorization-code/new-experience/authorizationCodeNew.yml",
+        "configPath": "scenarios/authentication/authorization-code/new-experience/config/tus2/baseline/config.tus2.baseline.yml",
+        "targetRPS": 500
+      }
+    ]
+  }
+]

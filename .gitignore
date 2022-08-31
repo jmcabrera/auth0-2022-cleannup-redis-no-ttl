@@ -1,0 +1,3 @@
+node_modules/
+auth0-load-tests/
+.env

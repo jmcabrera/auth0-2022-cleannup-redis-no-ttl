@@ -1,0 +1,21 @@
+{
+  "name": "2022-cleanup-redis-no-ttl",
+  "version": "1.0.0",
+  "description": "",
+  "main": "cleanup.ts",
+  "engines": {
+    "node": ">=16"
+  },
+  "scripts": {
+    "insert": "ts-node insert.ts",
+    "cleanup": "ts-node cleanup.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.2",
+    "ioredis": "^5.2.2",
+    "ts-node": "^10.9.1"
+  }
+}
